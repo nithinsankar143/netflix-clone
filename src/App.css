@@ -81,3 +81,11 @@ span{
   display: flex;
   flex-direction: column;
 }
+.containers{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+/* .header{
+  display: flex;
+  flex-wrap: nowrap;
+} */

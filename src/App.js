@@ -2,7 +2,7 @@
 import "./App.css";
 import { ReactDOM } from "react";
 import { useEffect, useState } from "react";
-import { api, api_key } from "axios";
+import api, { api_key } from "./axios";
 import { BrowserRouter } from "react-router-dom";
 import MovieList from "./MovieList";
 function App() {
