@@ -11,14 +11,15 @@ const MovieList = () => {
     <nav>
       <div className="containers">
         <b>NETFLIX</b>
-        <b>People</b>
+
         <div className="movielist">
           <Link to="/NowPlaying">NowPlaying</Link>
           <Link to="/Upcoming">UpComing</Link>
           <Link to="/Popular">Popular</Link>
           <Link to="/TopRated">TopRated</Link>
         </div>
-
+        <b>TV Show</b>
+        <b>People</b>
         <b>more</b>
         <b>Language</b>
         <b>dp</b>

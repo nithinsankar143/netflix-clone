@@ -2,7 +2,7 @@ const MovieGrid = ({ data }) => {
   return (
     <div className="container">
       {data.map((movies) => {
-        const { poster_path, id, title, release_date } = movies;
+        const { poster_path, title, release_date } = movies;
         return (
           <div className="moviecard">
             <div className="thumbnail">
@@ -13,8 +13,6 @@ const MovieGrid = ({ data }) => {
                 width={"100%"}
                 height={"70%"}
               ></img>
-
-              <div className="divid">{id}</div>
               <div className="divtitle">
                 <b>{title}</b>
               </div>
