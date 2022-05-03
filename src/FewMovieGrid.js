@@ -1,7 +1,7 @@
-const MovieGrid = ({ data }) => {
+const FewMovieGrid = ({ data }) => {
   return (
     <div className="container">
-      {data.map((movies) => {
+      {data.slice(0, 4).map((movies) => {
         const { poster_path, id, title, release_date } = movies;
         return (
           <div className="moviecard">
@@ -26,4 +26,4 @@ const MovieGrid = ({ data }) => {
     </div>
   );
 };
-export default MovieGrid;
+export default FewMovieGrid;

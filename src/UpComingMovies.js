@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import api, { api_key } from "./axios";
-import MovieGrid from "./MovieGrid";
+import FewMovieGrid from "./FewMovieGrid";
 function UpComingMovies() {
   const [data, setdata] = useState([]);
   const apiUpcoming = api.get("movie/upcoming", { params: { api_key } });
@@ -13,7 +13,7 @@ function UpComingMovies() {
     data();
   }, []);
   console.log(data);
-  return <MovieGrid data={data} />;
+  return <FewMovieGrid data={data} />;
 }
 
 export default UpComingMovies;

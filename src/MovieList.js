@@ -1,31 +1,35 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import UpComingMovies from "./UpComingMovies";
+import UpComing from "./UpComing";
 import NowPlaying from "./NowPlaying";
-import PopularMovies from "./Popular";
+import Popular from "./Popular";
 import TopRated from "./TopRated";
 import "./App.css";
+import Layout from "./Layout";
 const MovieList = () => {
   return (
     <nav>
       <div className="containers">
-        <div>NETFLIX</div>
-        <div>People</div>
+        <b>NETFLIX</b>
+        <b>People</b>
         <div className="movielist">
           <Link to="/NowPlaying">NowPlaying</Link>
-          <Link to="/UpcomingMovies">UpComingMovies</Link>
-          <Link to="/PopularMovies">PopularMovies</Link>
+          <Link to="/Upcoming">UpComing</Link>
+          <Link to="/Popular">Popular</Link>
           <Link to="/TopRated">TopRated</Link>
         </div>
-        <div>more</div>
-        <div>Language</div>
-        <div>dp</div>
-        <div>search</div>
+
+        <b>more</b>
+        <b>Language</b>
+        <b>dp</b>
+        <b>search</b>
       </div>
+
       <Routes>
+        <Route path="/" element={<Layout />} />
         <Route path="/NowPlaying" element={<NowPlaying />} />
-        <Route path="/UpcomingMovies" element={<UpComingMovies />} />
-        <Route path="/PopularMovies" element={<PopularMovies />} />
+        <Route path="/Upcoming" element={<UpComing />} />
+        <Route path="/Popular" element={<Popular />} />
         <Route path="/TopRated" element={<TopRated />} />
       </Routes>
     </nav>

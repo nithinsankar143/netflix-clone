@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import api, { api_key } from "./axios";
-import MovieGrid from "./MovieGrid";
-function Popular() {
+import FewMovieGrid from "./FewMovieGrid";
+function TopRatedMovies() {
   const [data, setdata] = useState([]);
-  const apiUpcoming = api.get("movie/popular", { params: { api_key } });
+  const apiUpcoming = api.get("movie/top_rated", { params: { api_key } });
   useEffect(() => {
     const data = async () => {
       const response = await apiUpcoming;
@@ -13,8 +13,7 @@ function Popular() {
     data();
   }, []);
   console.log(data);
-
-  return <MovieGrid data={data} />;
+  return <FewMovieGrid data={data} />;
 }
 
-export default Popular;
+export default TopRatedMovies;

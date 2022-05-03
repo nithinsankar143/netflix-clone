@@ -84,6 +84,10 @@ span{
 .containers{
   display: grid;
   grid-template-columns: repeat(7,1fr);
+  background-color: bisque;
+  border: 3px black solid;
+  align-items: center;
+  font-size: large;
 }
 /* .header{
   display: flex;
