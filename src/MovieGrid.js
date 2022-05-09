@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const MovieGrid = ({ data }) => {
   return (
     <div className="container">
       {data.map((movies) => {
-        const { poster_path, title, release_date } = movies;
+        const { poster_path, title, release_date, id } = movies;
         return (
-          <div className="moviecard">
+          <Link className="moviecard" to={`/movies/${id}`}>
             <div className="thumbnail">
               <img
                 className="image"
@@ -18,7 +20,7 @@ const MovieGrid = ({ data }) => {
               </div>
               <div className="divid">{release_date}</div>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

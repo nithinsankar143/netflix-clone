@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 const FewMovieGrid = ({ data }) => {
   return (
     <div className="container">
       {data.slice(0, 4).map((movies) => {
-        const { poster_path, id, title, release_date } = movies;
+        const { poster_path, title, release_date, id } = movies;
         return (
-          <div className="moviecard">
+          <Link className="moviecard" to={`/movies/${id}`}>
             <div className="thumbnail">
               <img
                 className="image"
@@ -14,13 +16,12 @@ const FewMovieGrid = ({ data }) => {
                 height={"70%"}
               ></img>
 
-              <div className="divid">{id}</div>
               <div className="divtitle">
                 <b>{title}</b>
               </div>
               <div className="divid">{release_date}</div>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

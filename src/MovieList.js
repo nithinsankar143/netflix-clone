@@ -4,6 +4,7 @@ import UpComing from "./UpComing";
 import NowPlaying from "./NowPlaying";
 import Popular from "./Popular";
 import TopRated from "./TopRated";
+import GetMovieDetails from "./GetMovieDetails";
 import "./App.css";
 import Layout from "./Layout";
 const MovieList = () => {
@@ -32,6 +33,7 @@ const MovieList = () => {
         <Route path="/Upcoming" element={<UpComing />} />
         <Route path="/Popular" element={<Popular />} />
         <Route path="/TopRated" element={<TopRated />} />
+        <Route path="movies/:movieid" element={<GetMovieDetails />} />
       </Routes>
     </nav>
   );
