@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const FewMovieGrid = ({ data }) => {
   return (
     <div className="container">
-      {data.slice(0, 4).map((movies) => {
+      {data.slice(0, 5).map((movies) => {
         const { poster_path, title, release_date, id } = movies;
         return (
           <Link className="moviecard" to={`/movies/${id}`}>

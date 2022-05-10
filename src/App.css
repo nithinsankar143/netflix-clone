@@ -32,86 +32,127 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 
-.container{
+.container {
   background-color: skyblue;
- 
-border: 2px black solid;
-display: grid;
-grid-template-columns:repeat(4,1fr) ;
-gap: 15px;
+  border: 2px black solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
 }
-.moviecard{
+
+.moviecard {
   /* border: 3px black solid; */
   display: flex;
   padding: 0 40px;
 
 }
-.image{
+
+.image {
   border-radius: 20px 20px 0 0;
 }
-.divtitle{
+
+.divtitle {
   display: flex;
   justify-content: center;
 }
-.thumbnail{
+
+.thumbnail {
   border: 2px black solid;
-  border-radius: 23px ;
+  border-radius: 23px;
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
 
 }
-span{
+
+span {
   color: red;
 }
-.divid{
+
+.divid {
   display: flex;
   justify-content: center;
   font-size: 30px;
 }
 
-.movielist{
+.movielist {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
+
 }
-.containers{
+
+.containers {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
+  grid-template-columns: repeat(8, 1fr);
   background-color: bisque;
   border: 3px black solid;
   align-items: center;
   font-size: large;
+  padding-left: 30px;
+
 }
+.nav_container{
+  margin: 0 20px;
+
+}
+
 /* .header{
   display: flex;
   flex-wrap: nowrap;
 } */
-.container_layout{
+.container_layout {
   background-color: beige;
 }
-.home{
+
+.home {
   border: 2px black solid;
   background-color: lightcyan;
   margin: 10px 0;
   border-radius: 20px 20px 0 0;
 }
 
-.MovieDetails{
-  background-color: orange;
+.MovieDetails {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 75vh;
-  border: 30px lightslategrey solid;
+  height: 83vh;
 }
-.imagestyle{
-  border-radius: 20px;
-  padding-right: 20px;
 
+.imagestyle {
+padding: 40px 80px;
+}
+.imagestyle img{
+  border-radius: 30px;
+}
+.content{
+  color: red;
+  padding: 50px 40px 50px 0;
+ 
+}
+.title{
+  display: flex;
+}
+.original_title{
+  font-size: 30px;
+}
+.release_date{
+  display: flex;
+  align-items: center;
+}
+.types{
+ display: grid;
+ grid-template-columns: repeat(6,1fr);
+ padding: 40px 0;
+ 
+}
+.overview{
+  font-size:30px ;
 }

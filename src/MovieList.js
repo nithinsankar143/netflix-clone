@@ -9,7 +9,7 @@ import "./App.css";
 import Layout from "./Layout";
 const MovieList = () => {
   return (
-    <nav>
+    <nav className="nav_container">
       <div className="containers">
         <b>NETFLIX</b>
 
