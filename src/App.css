@@ -105,4 +105,13 @@ span{
 
 .MovieDetails{
   background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 75vh;
+  border: 30px lightslategrey solid;
+}
+.imagestyle{
+  border-radius: 20px;
+  padding-right: 20px;
+
 }
