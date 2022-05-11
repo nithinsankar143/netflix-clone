@@ -2,7 +2,11 @@ const Genres = ({ data }) => {
   return (
     <div>
       {data.genres.map((genre) => {
-        return <div>{genre.name}</div>;
+        const {
+          genres: { id, name },
+        } = genre;
+
+        return <div>{name}</div>;
       })}
     </div>
   );

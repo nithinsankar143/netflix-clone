@@ -37,20 +37,21 @@
     transform: rotate(360deg);
   }
 }
-
-
+.nav_container{
+  background-color: black;
+}
 .container {
-  background-color: skyblue;
+  background-color: black;
   border: 2px black solid;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 25px;
 }
 
 .moviecard {
   /* border: 3px black solid; */
   display: flex;
-  padding: 0 40px;
+  padding: 0 20px;
 
 }
 
@@ -64,13 +65,18 @@
 }
 
 .thumbnail {
-  border: 2px black solid;
+  /* border: 2px black solid; */
   border-radius: 23px;
-  background-color: antiquewhite;
+  background-color: orange;
+  color: black;
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
 
+
+}
+.moviecard :hover{
+  transform: scale(0.9);
 }
 
 span {
@@ -90,15 +96,23 @@ span {
 
 }
 
+
 .containers {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  display: flex;
+  flex-direction: row;
   background-color: bisque;
   border: 3px black solid;
   align-items: center;
   font-size: large;
+  justify-content: space-between;
+
   padding-left: 30px;
 
+}
+.lang{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .nav_container{
   margin: 0 20px;
@@ -115,9 +129,14 @@ span {
 
 .home {
   border: 2px black solid;
-  background-color: lightcyan;
+  background-color: blue;
   margin: 10px 0;
   border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: larger;
 }
 
 .MovieDetails {

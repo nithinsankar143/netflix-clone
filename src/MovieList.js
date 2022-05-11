@@ -6,12 +6,16 @@ import Popular from "./Popular";
 import TopRated from "./TopRated";
 import GetMovieDetails from "./GetMovieDetails";
 import "./App.css";
+import logo from "./netflixlogo.jpg";
+import { IoSearch } from "react-icons/io";
 import Layout from "./Layout";
 const MovieList = () => {
   return (
     <nav className="nav_container">
       <div className="containers">
-        <b>NETFLIX</b>
+        <div>
+          <img src={logo} alt="" width={"80px"} height={"40px"}></img>
+        </div>
 
         <div className="movielist">
           <Link to="/NowPlaying">NowPlaying</Link>
@@ -22,9 +26,15 @@ const MovieList = () => {
         <b>TV Show</b>
         <b>People</b>
         <b>more</b>
-        <b>Language</b>
-        <b>dp</b>
-        <b>search</b>
+        <div className="lang">
+          <b>Language</b>
+        </div>
+
+        <b>LOG IN</b>
+        {/* <div>
+          <IoSearch />
+        </div> */}
+        <b>IoSearch</b>
       </div>
 
       <Routes>
