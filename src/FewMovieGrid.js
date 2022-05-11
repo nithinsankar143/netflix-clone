@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const FewMovieGrid = ({ data }) => {
   return (
-    <div className="container">
+    <div className="fewmoviegrid_container">
       {data.slice(0, 5).map((movies) => {
         const { poster_path, title, release_date, id } = movies;
         return (
           <Link className="moviecard" to={`/movies/${id}`}>
-            <div className="thumbnail">
+            <div className="fewmoviegrid_thumbnail">
               <img
                 className="image"
                 src={`https://image.tmdb.org/t/p/w300/${poster_path}`}

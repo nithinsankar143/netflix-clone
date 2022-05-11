@@ -11,10 +11,10 @@ import { IoSearch } from "react-icons/io";
 import Layout from "./Layout";
 const MovieList = () => {
   return (
-    <nav className="nav_container">
-      <div className="containers">
+    <nav className="movielist_container">
+      <div className="movielist_thumbnail">
         <div>
-          <img src={logo} alt="" width={"80px"} height={"40px"}></img>
+          <img src={logo} alt="" width={"120px"} height={"80px"}></img>
         </div>
 
         <div className="movielist">

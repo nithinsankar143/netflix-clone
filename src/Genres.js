@@ -1,13 +1,10 @@
 const Genres = ({ data }) => {
   return (
-    <div>
-      {data.genres.map((genre) => {
-        const {
-          genres: { id, name },
-        } = genre;
-
-        return <div>{name}</div>;
-      })}
+    <div className="genres">
+      {data.genres?.length > 0 &&
+        data.genres.map((genre) => {
+          return <div>{genre.name}</div>;
+        })}
     </div>
   );
 };
