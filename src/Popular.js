@@ -12,7 +12,7 @@ function Popular() {
     };
     data();
   }, []);
-  console.log(data);
+  //console.log(data);
 
   return <MovieGrid data={data} />;
 }

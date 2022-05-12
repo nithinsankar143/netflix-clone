@@ -17,7 +17,7 @@ const GetMovieDetails = () => {
     };
     data();
   }, [movieid]);
-  console.log(data);
+  //console.log(data);
   return <MovieDetails data={data} />;
 };
 export default GetMovieDetails;

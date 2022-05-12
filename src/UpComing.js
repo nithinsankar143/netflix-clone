@@ -12,7 +12,7 @@ function UpComing() {
     };
     data();
   }, []);
-  console.log(data);
+  // console.log(data);
   return <MovieGrid data={data} />;
 }
 

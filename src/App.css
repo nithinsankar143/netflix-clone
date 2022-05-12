@@ -67,7 +67,7 @@
 .moviegrid_thumbnail {
   /* border: 2px black solid; */
   border-radius: 23px;
-  background-color: orange;
+  background-color: whitesmoke;
   color: black;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ span {
 }
 .fewmoviegrid_thumbnail{
   border-radius: 23px;
-  background-color: orange;
+  background-color: whitesmoke;
   color: black;
   display: flex;
   flex-direction: column;

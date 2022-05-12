@@ -19,7 +19,7 @@ const Actors = () => {
     };
     data();
   }, [movieid]);
-  console.log(data);
+  // console.log(data);
   return <ActorsData data={data} />;
 };
 export default Actors;

@@ -12,7 +12,7 @@ function PopularMovies() {
     };
     data();
   }, []);
-  console.log(data);
+  // console.log(data);
 
   return <FewMovieGrid data={data} />;
 }
