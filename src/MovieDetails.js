@@ -1,4 +1,4 @@
-import Actors from "./Actors";
+import FewActor from "./FewActor";
 import Genres from "./Genres";
 
 const MovieDetails = ({ data }) => {
@@ -47,10 +47,11 @@ const MovieDetails = ({ data }) => {
             <b>{data.overview}</b>
           </div>
           <div>Budget : {data.budget}</div>
+
+          <div className="MovieDetails_FewActor">
+            <FewActor />
+          </div>
         </div>
-      </div>
-      <div>
-        <Actors />
       </div>
     </div>
   );

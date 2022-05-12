@@ -38,11 +38,12 @@
   }
 }
 .movielist_container{
-  background-color: black;
+  /* background-color: black; */
 }
 .moviegrid_container {
   background-color: black;
-  border: 2px black solid;
+  border-radius: 20px;
+  /* border: 2px black solid; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 25px;
@@ -102,12 +103,12 @@ span {
   flex-direction: row;
   background-color: black;
   color: white;
-  border: 3px black solid;
+  border: 3px white solid;
   align-items: center;
   font-size: large;
   justify-content: space-between;
-
-  padding-left: 30px;
+border-radius: 20px;
+  padding-left:  30px;
 
 }
 .lang{
@@ -121,7 +122,7 @@ span {
 }
 .fewmoviegrid_container{
   background-color: black;
-  border: 2px black solid;
+  
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 25px;
@@ -135,19 +136,16 @@ span {
   flex: 1 1 0;
 }
 
-/* .header{
-  display: flex;
-  flex-wrap: nowrap;
-} */
+
 .container_layout {
-  background-color: beige;
+  border-radius: 20px;
 }
 
 .home {
-  border: 2px black solid;
-  background-color: blue;
+border-radius: 20px;
+border: 5px black solid;
+  background-color: black;
   margin: 10px 0;
-  border-radius: 20px 20px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,4 +202,33 @@ margin: 40px 50px;
 }
 .overview{
   font-size:30px ;
+}
+
+.ActorData_container{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  padding: 0 40px;
+  grid-row-gap: 30px;
+ 
+}
+.ActorsData_image img{
+ border: 5px black solid;
+ border-radius: 30px;
+}
+.MovieDetails_FewActor{
+  margin-top: 20px;
+}
+.ActorData{
+  display: flex;
+}
+.LoadMore{
+  border: 3px black solid;
+  border-radius: 40px;
+  color: white;
+  font-size: 30px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }

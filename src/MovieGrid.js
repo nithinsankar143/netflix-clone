@@ -18,7 +18,6 @@ const MovieGrid = ({ data }) => {
               <div className="divtitle">
                 <b>{title}</b>
               </div>
-              <div className="divid">{release_date}</div>
             </div>
           </Link>
         );

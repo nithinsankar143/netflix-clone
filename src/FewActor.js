@@ -2,9 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import api, { api_key } from "./axios";
 import { useParams } from "react-router-dom";
-import ActorsData from "./ActorsData";
+import FewActorData from "./FewActorData";
 
-const Actors = () => {
+const FewActor = () => {
   const [data, setdata] = useState([]);
   const { movieid } = useParams();
 
@@ -21,6 +21,6 @@ const Actors = () => {
     data();
   }, [movieid]);
   // console.log(data);
-  return <ActorsData data={data} />;
+  return <FewActorData data={data} />;
 };
-export default Actors;
+export default FewActor;
