@@ -5,16 +5,18 @@ const ActorsData = ({ data }) => {
     <div className="ActorData_container">
       {data.map((actor) => {
         return (
-          <div>
+          <div className="ActorData_thumbnail">
             <div className="ActorsData_image">
               <img
                 src={`https://image.tmdb.org/t/p/original/${actor.profile_path}`}
                 alt=" "
-                width={"50%"}
-                height={"50%"}
+                width={"130px"}
+                height={"150px"}
               ></img>
             </div>
-            <div>{actor.name}</div>
+            <div className="Actor_name">
+              <b>{actor.name}</b>
+            </div>
           </div>
         );
       })}

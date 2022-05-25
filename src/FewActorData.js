@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FewActorData = ({ data }) => {
   return (
@@ -20,7 +21,9 @@ const FewActorData = ({ data }) => {
           );
         })}
       </div>
-      <div className="LoadMore">LoadMore</div>
+      <div className="LoadMore">
+        <Link to="./Actors">LoadMore</Link>
+      </div>
     </div>
   );
 };

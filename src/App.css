@@ -152,6 +152,9 @@ border: 5px black solid;
   color: white;
   font-size: larger;
 }
+.link_layout{
+  color: white;
+}
 
 .MovieDetails {
   display: grid;
@@ -205,30 +208,51 @@ margin: 40px 50px;
 }
 
 .ActorData_container{
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  padding: 0 40px;
-  grid-row-gap: 30px;
- 
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  background-color: black;
+}
+.ActorData_thumbnail{
+  display: flex;
+  flex-direction: column;
+  border: 2px black solid;
+ margin: 20px;
+border-radius: 20px; 
+background-color: white;
+
+}
+.Actor_name{
+align-items: center;  
 }
 .ActorsData_image img{
- border: 5px black solid;
- border-radius: 30px;
+ /* border: 5px black solid; */
+ border-radius: 20px 20px 0 0;
 }
-.MovieDetails_FewActor{
+/* .MovieDetails_FewActor{
   margin-top: 20px;
-}
+  
+} */
 .ActorData{
   display: flex;
+}
+.Title_Actor{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  font-size: 35px;
+  /* padding: 10px; */
 }
 .LoadMore{
   border: 3px black solid;
   border-radius: 40px;
-  color: white;
+  color: black;
+  background-color: white;
   font-size: 30px;
-  padding: 10px 50px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+ margin: 35px 0;
 }

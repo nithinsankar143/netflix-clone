@@ -1,5 +1,6 @@
-import FewActor from "./FewActor";
+import Actors from "./Actors";
 import Genres from "./Genres";
+import SimilarMovies from "./SimilarMovies";
 
 const MovieDetails = ({ data }) => {
   const hrs = Math.floor(data.runtime / 60);
@@ -47,12 +48,17 @@ const MovieDetails = ({ data }) => {
             <b>{data.overview}</b>
           </div>
           <div>Budget : {data.budget}</div>
-
-          <div className="MovieDetails_FewActor">
-            <FewActor />
-          </div>
         </div>
       </div>
+      <div className="Title_Actor">
+        <b>ACTOR</b>
+      </div>
+      <div className="MovieDetails_FewActor">
+        <Actors />
+      </div>
+      {/* <div>
+        <SimilarMovies />
+      </div> */}
     </div>
   );
 };

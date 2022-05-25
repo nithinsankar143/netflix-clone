@@ -5,6 +5,7 @@ import NowPlaying from "./NowPlaying";
 import Popular from "./Popular";
 import TopRated from "./TopRated";
 import GetMovieDetails from "./GetMovieDetails";
+import Actors from "./Actors";
 import "./App.css";
 import logo from "./netflixlogo.jpg";
 import { IoSearch } from "react-icons/io";
@@ -44,6 +45,7 @@ const MovieList = () => {
         <Route path="/Popular" element={<Popular />} />
         <Route path="/TopRated" element={<TopRated />} />
         <Route path="movies/:movieid" element={<GetMovieDetails />} />
+        <Route path="/Actors" element={<Actors />} />
       </Routes>
     </nav>
   );
