@@ -15,12 +15,12 @@ const SimilarMovies = () => {
   useEffect(() => {
     const data = async () => {
       const response = await apiUpcoming;
-      setdata(response.data.cast);
+      setdata(response.data.results);
       // console.log("movie id", movieid);
     };
     data();
   }, [movieid]);
-  // console.log(data);
+  console.log(data);
   return <SimilarMoviesData data={data} />;
 };
 export default SimilarMovies;

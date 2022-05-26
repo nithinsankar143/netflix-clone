@@ -50,15 +50,18 @@ const MovieDetails = ({ data }) => {
           <div>Budget : {data.budget}</div>
         </div>
       </div>
-      <div className="Title_Actor">
-        <b>ACTOR</b>
+      <div className="Title_cast">
+        <b>CAST</b>
       </div>
       <div className="MovieDetails_FewActor">
         <Actors />
       </div>
-      {/* <div>
+      <div className="Title_similarmovies">
+        <b>SIMILAR MOVIES</b>
+      </div>
+      <div>
         <SimilarMovies />
-      </div> */}
+      </div>
     </div>
   );
 };
