@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 
-const FewMovieGrid = ({ data }) => {
+const TVDataSlice = ({ data }) => {
   return (
-    <div className="fewmoviegrid_container">
-      {data.slice(0, 5).map((movies) => {
-        const { poster_path, title, release_date, id } = movies;
+    <div className="moviegrid_container">
+      {data.slice(0, 5).map((tvdata) => {
+        const { poster_path, name, release_date, id } = tvdata;
+
         return (
           <Link
             className="moviecard"
             style={{ textDecoration: "none" }}
             to={`/movies/${id}`}
           >
-            <div className="fewmoviegrid_thumbnail">
+            <div className="moviegrid_thumbnail">
               <img
                 className="image"
                 src={`https://image.tmdb.org/t/p/w300/${poster_path}`}
@@ -19,9 +20,8 @@ const FewMovieGrid = ({ data }) => {
                 width={"100%"}
                 height={"70%"}
               ></img>
-
               <div className="divtitle">
-                <b>{title}</b>
+                <b>{name}</b>
               </div>
             </div>
           </Link>
@@ -30,4 +30,4 @@ const FewMovieGrid = ({ data }) => {
     </div>
   );
 };
-export default FewMovieGrid;
+export default TVDataSlice;

@@ -7,6 +7,7 @@ const ActorsData = ({ data }) => {
       {data.map((actor) => {
         return (
           <Link
+            style={{ textDecoration: "none" }}
             className="ActorData_thumbnail"
             to={`/ActorDetail1/${actor.id}`}
           >

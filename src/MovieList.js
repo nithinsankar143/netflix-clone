@@ -5,7 +5,7 @@ import "./App.css";
 import Layout from "./Layout";
 import logo from "./netflixlogo.jpg";
 
-import TVDetails from "./TVDetails";
+import TVPopularSlice from "./TVPopularSlice";
 import TVLayout from "./TVLayout";
 const MovieList = () => {
   return (
@@ -15,15 +15,46 @@ const MovieList = () => {
           <img src={logo} alt="" width={"120px"} height={"80px"}></img>
         </div>
 
-        <div className="movielist">
-          <Link to="/NowPlaying">NowPlaying</Link>
-          <Link to="/Upcoming">UpComing</Link>
-          <Link to="/Popular">Popular</Link>
-          <Link to="/TopRated">TopRated</Link>
-        </div>
+        <b className="movielist">
+          {/* <Link to="/Layout">Movies</Link> */}
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/NowPlaying"
+          >
+            NowPlaying
+          </Link>
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/Upcoming"
+          >
+            UpComing
+          </Link>
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/Popular"
+          >
+            Popular
+          </Link>
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/TopRated"
+          >
+            TopRated
+          </Link>
+        </b>
         <b>
-          <TVDetails />
-          TV Show
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/TVLayout"
+          >
+            {" "}
+            TV Show
+          </Link>
         </b>
         <b>People</b>
         <b>more</b>

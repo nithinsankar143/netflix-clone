@@ -10,7 +10,11 @@ const Layout = () => {
       <div className="home nowplaying">
         <h2>
           {" "}
-          <Link className="link_layout" to="/NowPlaying">
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/NowPlaying"
+          >
             NOW PLAYING
           </Link>
         </h2>
@@ -20,7 +24,11 @@ const Layout = () => {
       </div>
       <div className="home upcoming">
         <h2>
-          <Link className="link_layout" to="/Upcoming">
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/Upcoming"
+          >
             UPCOMING
           </Link>
         </h2>
@@ -31,7 +39,11 @@ const Layout = () => {
       <div className="home popular">
         <h2>
           {" "}
-          <Link className="link_layout" to="/Popular">
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/Popular"
+          >
             POPULAR
           </Link>
         </h2>
@@ -41,7 +53,11 @@ const Layout = () => {
       </div>
       <div className="home toprated">
         <h2>
-          <Link className="link_layout" to="/TopRated">
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/TopRated"
+          >
             TOP RATED
           </Link>
         </h2>

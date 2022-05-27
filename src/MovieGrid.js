@@ -6,7 +6,11 @@ const MovieGrid = ({ data }) => {
       {data.map((movies) => {
         const { poster_path, title, release_date, id } = movies;
         return (
-          <Link className="moviecard" to={`/movies/${id}`}>
+          <Link
+            className="moviecard"
+            style={{ textDecoration: "none" }}
+            to={`/movies/${id}`}
+          >
             <div className="moviegrid_thumbnail">
               <img
                 className="image"
