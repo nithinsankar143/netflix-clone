@@ -17,6 +17,8 @@ import TVTopRated from "./TVTopRated";
 import TVNowPlaying from "./TVNowPlaying";
 import TVUpcoming from "./TVUpcoming";
 import SimilarMovies from "./SimilarMovies";
+import PeopleLayout from "./PeopleLayout";
+import PeoplePopular from "./PeoplePopular";
 function App() {
   return (
     <div>
@@ -38,6 +40,10 @@ function App() {
           <Route path="/TVTopRated" element={<TVTopRated />} />
           <Route path="/TVNowPlaying" element={<TVNowPlaying />} />
           <Route path="/TVUpcoming" element={<TVUpcoming />} />
+        </Route>
+        <Route>
+          <Route path="/PeopleLayout" element={<PeopleLayout />} />
+          <Route path="/PeoplePopular" element={<PeoplePopular />} />
         </Route>
       </Routes>
     </div>

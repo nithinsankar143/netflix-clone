@@ -8,7 +8,7 @@ const TVData = ({ data }) => {
           <Link
             className="moviecard"
             style={{ textDecoration: "none" }}
-            to={`/movies/${tvdata.id}`}
+            to={`/tv/${tvdata.id}`}
           >
             <div className="moviegrid_thumbnail">
               <img

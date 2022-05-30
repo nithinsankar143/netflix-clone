@@ -56,7 +56,16 @@ const MovieList = () => {
             TV Show
           </Link>
         </b>
-        <b>People</b>
+        <b>
+          <Link
+            className="link_layout"
+            style={{ textDecoration: "none" }}
+            to="/PeopleLayout"
+          >
+            {" "}
+            PEOPLE
+          </Link>
+        </b>
         <b>more</b>
         <div className="lang">
           <b>Language</b>
